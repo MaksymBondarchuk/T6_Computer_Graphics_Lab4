@@ -35,8 +35,7 @@
             // 
             // pbox
             // 
-            this.pbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.pbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbox.BackColor = System.Drawing.Color.Transparent;
             this.pbox.Location = new System.Drawing.Point(12, 12);
             this.pbox.Name = "pbox";
             this.pbox.Size = new System.Drawing.Size(1000, 300);
