@@ -36,16 +36,16 @@
             // pbox
             // 
             this.pbox.BackColor = System.Drawing.Color.Transparent;
-            this.pbox.Location = new System.Drawing.Point(12, 12);
+            this.pbox.Location = new System.Drawing.Point(0, 0);
             this.pbox.Name = "pbox";
-            this.pbox.Size = new System.Drawing.Size(1000, 300);
+            this.pbox.Size = new System.Drawing.Size(1500, 600);
             this.pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbox.TabIndex = 2;
             this.pbox.TabStop = false;
             // 
             // bBuild
             // 
-            this.bBuild.Location = new System.Drawing.Point(920, 443);
+            this.bBuild.Location = new System.Drawing.Point(754, 606);
             this.bBuild.Name = "bBuild";
             this.bBuild.Size = new System.Drawing.Size(75, 23);
             this.bBuild.TabIndex = 3;
@@ -58,7 +58,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1040, 498);
+            this.ClientSize = new System.Drawing.Size(1500, 661);
             this.Controls.Add(this.bBuild);
             this.Controls.Add(this.pbox);
             this.MaximizeBox = false;
