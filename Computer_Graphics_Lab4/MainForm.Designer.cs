@@ -80,7 +80,7 @@
             // rbSerpinsli
             // 
             this.rbSerpinsli.AutoSize = true;
-            this.rbSerpinsli.Location = new System.Drawing.Point(256, 632);
+            this.rbSerpinsli.Location = new System.Drawing.Point(340, 632);
             this.rbSerpinsli.Name = "rbSerpinsli";
             this.rbSerpinsli.Size = new System.Drawing.Size(64, 17);
             this.rbSerpinsli.TabIndex = 5;
@@ -91,7 +91,7 @@
             // rbMandelbrot
             // 
             this.rbMandelbrot.AutoSize = true;
-            this.rbMandelbrot.Location = new System.Drawing.Point(326, 632);
+            this.rbMandelbrot.Location = new System.Drawing.Point(256, 632);
             this.rbMandelbrot.Name = "rbMandelbrot";
             this.rbMandelbrot.Size = new System.Drawing.Size(78, 17);
             this.rbMandelbrot.TabIndex = 6;
@@ -124,6 +124,7 @@
             // 
             // bClear
             // 
+            this.bClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bClear.Location = new System.Drawing.Point(1012, 626);
             this.bClear.Name = "bClear";
             this.bClear.Size = new System.Drawing.Size(75, 23);
@@ -152,10 +153,10 @@
             this.warning.ForeColor = System.Drawing.Color.Red;
             this.warning.Location = new System.Drawing.Point(527, 652);
             this.warning.Name = "warning";
-            this.warning.Size = new System.Drawing.Size(397, 13);
+            this.warning.Size = new System.Drawing.Size(401, 13);
             this.warning.TabIndex = 10;
-            this.warning.Text = "Build time may be very long. Your computer can crash. May be stack overflow error" +
-    "";
+            this.warning.Text = "Build time may be very long. Your computer may freeze. May be stack overflow erro" +
+    "r";
             this.warning.Visible = false;
             // 
             // label1
