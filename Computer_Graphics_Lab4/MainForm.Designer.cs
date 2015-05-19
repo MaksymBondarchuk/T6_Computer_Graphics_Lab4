@@ -36,7 +36,6 @@
             this.bClear = new System.Windows.Forms.Button();
             this.bSave = new System.Windows.Forms.Button();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
-            this.warning = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lRank = new System.Windows.Forms.Label();
             this.pbox = new System.Windows.Forms.PictureBox();
@@ -46,7 +45,7 @@
             // 
             // bBuild
             // 
-            this.bBuild.Location = new System.Drawing.Point(10, 137);
+            this.bBuild.Location = new System.Drawing.Point(15, 368);
             this.bBuild.Name = "bBuild";
             this.bBuild.Size = new System.Drawing.Size(75, 23);
             this.bBuild.TabIndex = 3;
@@ -57,7 +56,7 @@
             // rbKoch
             // 
             this.rbKoch.AutoSize = true;
-            this.rbKoch.Location = new System.Drawing.Point(10, 33);
+            this.rbKoch.Location = new System.Drawing.Point(15, 197);
             this.rbKoch.Name = "rbKoch";
             this.rbKoch.Size = new System.Drawing.Size(50, 17);
             this.rbKoch.TabIndex = 4;
@@ -68,7 +67,7 @@
             // rbSerpinsli
             // 
             this.rbSerpinsli.AutoSize = true;
-            this.rbSerpinsli.Location = new System.Drawing.Point(150, 33);
+            this.rbSerpinsli.Location = new System.Drawing.Point(15, 243);
             this.rbSerpinsli.Name = "rbSerpinsli";
             this.rbSerpinsli.Size = new System.Drawing.Size(64, 17);
             this.rbSerpinsli.TabIndex = 5;
@@ -80,7 +79,7 @@
             // 
             this.rbMandelbrot.AutoSize = true;
             this.rbMandelbrot.Checked = true;
-            this.rbMandelbrot.Location = new System.Drawing.Point(66, 33);
+            this.rbMandelbrot.Location = new System.Drawing.Point(15, 220);
             this.rbMandelbrot.Name = "rbMandelbrot";
             this.rbMandelbrot.Size = new System.Drawing.Size(78, 17);
             this.rbMandelbrot.TabIndex = 6;
@@ -91,12 +90,7 @@
             // 
             // rank
             // 
-            this.rank.Location = new System.Drawing.Point(10, 89);
-            this.rank.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
+            this.rank.Location = new System.Drawing.Point(15, 319);
             this.rank.Minimum = new decimal(new int[] {
             1,
             0,
@@ -115,7 +109,7 @@
             // bClear
             // 
             this.bClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bClear.Location = new System.Drawing.Point(91, 137);
+            this.bClear.Location = new System.Drawing.Point(15, 397);
             this.bClear.Name = "bClear";
             this.bClear.Size = new System.Drawing.Size(75, 23);
             this.bClear.TabIndex = 8;
@@ -125,7 +119,7 @@
             // 
             // bSave
             // 
-            this.bSave.Location = new System.Drawing.Point(172, 137);
+            this.bSave.Location = new System.Drawing.Point(15, 426);
             this.bSave.Name = "bSave";
             this.bSave.Size = new System.Drawing.Size(75, 23);
             this.bSave.TabIndex = 9;
@@ -137,22 +131,10 @@
             // 
             this.saveFile.Filter = "BitMap files (*.bmp)|*.*";
             // 
-            // warning
-            // 
-            this.warning.AutoSize = true;
-            this.warning.ForeColor = System.Drawing.Color.Red;
-            this.warning.Location = new System.Drawing.Point(7, 112);
-            this.warning.Name = "warning";
-            this.warning.Size = new System.Drawing.Size(401, 13);
-            this.warning.TabIndex = 10;
-            this.warning.Text = "Build time may be very long. Your computer may freeze. May be stack overflow erro" +
-    "r";
-            this.warning.Visible = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 13);
+            this.label1.Location = new System.Drawing.Point(12, 177);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 11;
@@ -161,7 +143,7 @@
             // lRank
             // 
             this.lRank.AutoSize = true;
-            this.lRank.Location = new System.Drawing.Point(7, 72);
+            this.lRank.Location = new System.Drawing.Point(12, 302);
             this.lRank.Name = "lRank";
             this.lRank.Size = new System.Drawing.Size(70, 13);
             this.lRank.TabIndex = 12;
@@ -170,7 +152,7 @@
             // pbox
             // 
             this.pbox.BackColor = System.Drawing.Color.Transparent;
-            this.pbox.Location = new System.Drawing.Point(0, 0);
+            this.pbox.Location = new System.Drawing.Point(148, 0);
             this.pbox.Margin = new System.Windows.Forms.Padding(0);
             this.pbox.Name = "pbox";
             this.pbox.Size = new System.Drawing.Size(50, 50);
@@ -189,7 +171,6 @@
             this.ClientSize = new System.Drawing.Size(1568, 781);
             this.Controls.Add(this.lRank);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.warning);
             this.Controls.Add(this.bSave);
             this.Controls.Add(this.bClear);
             this.Controls.Add(this.rank);
@@ -219,7 +200,6 @@
         private System.Windows.Forms.Button bClear;
         private System.Windows.Forms.Button bSave;
         private System.Windows.Forms.SaveFileDialog saveFile;
-        private System.Windows.Forms.Label warning;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lRank;
         private System.Windows.Forms.PictureBox pbox;
