@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbox = new System.Windows.Forms.PictureBox();
             this.bBuild = new System.Windows.Forms.Button();
             this.rbKoch = new System.Windows.Forms.RadioButton();
             this.rbSerpinsli = new System.Windows.Forms.RadioButton();
@@ -40,23 +39,14 @@
             this.warning = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lRank = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox)).BeginInit();
+            this.pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.rank)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbox
-            // 
-            this.pbox.BackColor = System.Drawing.Color.Transparent;
-            this.pbox.Location = new System.Drawing.Point(0, 0);
-            this.pbox.Name = "pbox";
-            this.pbox.Size = new System.Drawing.Size(1500, 600);
-            this.pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbox.TabIndex = 2;
-            this.pbox.TabStop = false;
             // 
             // bBuild
             // 
-            this.bBuild.Location = new System.Drawing.Point(931, 626);
+            this.bBuild.Location = new System.Drawing.Point(10, 137);
             this.bBuild.Name = "bBuild";
             this.bBuild.Size = new System.Drawing.Size(75, 23);
             this.bBuild.TabIndex = 3;
@@ -67,12 +57,10 @@
             // rbKoch
             // 
             this.rbKoch.AutoSize = true;
-            this.rbKoch.Checked = true;
-            this.rbKoch.Location = new System.Drawing.Point(200, 632);
+            this.rbKoch.Location = new System.Drawing.Point(10, 33);
             this.rbKoch.Name = "rbKoch";
             this.rbKoch.Size = new System.Drawing.Size(50, 17);
             this.rbKoch.TabIndex = 4;
-            this.rbKoch.TabStop = true;
             this.rbKoch.Text = "Koch";
             this.rbKoch.UseVisualStyleBackColor = true;
             this.rbKoch.CheckedChanged += new System.EventHandler(this.rbKoch_CheckedChanged);
@@ -80,7 +68,7 @@
             // rbSerpinsli
             // 
             this.rbSerpinsli.AutoSize = true;
-            this.rbSerpinsli.Location = new System.Drawing.Point(340, 632);
+            this.rbSerpinsli.Location = new System.Drawing.Point(150, 33);
             this.rbSerpinsli.Name = "rbSerpinsli";
             this.rbSerpinsli.Size = new System.Drawing.Size(64, 17);
             this.rbSerpinsli.TabIndex = 5;
@@ -91,17 +79,19 @@
             // rbMandelbrot
             // 
             this.rbMandelbrot.AutoSize = true;
-            this.rbMandelbrot.Location = new System.Drawing.Point(256, 632);
+            this.rbMandelbrot.Checked = true;
+            this.rbMandelbrot.Location = new System.Drawing.Point(66, 33);
             this.rbMandelbrot.Name = "rbMandelbrot";
             this.rbMandelbrot.Size = new System.Drawing.Size(78, 17);
             this.rbMandelbrot.TabIndex = 6;
+            this.rbMandelbrot.TabStop = true;
             this.rbMandelbrot.Text = "Mandelbrot";
             this.rbMandelbrot.UseVisualStyleBackColor = true;
             this.rbMandelbrot.CheckedChanged += new System.EventHandler(this.rbMandelbrot_CheckedChanged);
             // 
             // rank
             // 
-            this.rank.Location = new System.Drawing.Point(530, 629);
+            this.rank.Location = new System.Drawing.Point(10, 89);
             this.rank.Maximum = new decimal(new int[] {
             10,
             0,
@@ -125,7 +115,7 @@
             // bClear
             // 
             this.bClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bClear.Location = new System.Drawing.Point(1012, 626);
+            this.bClear.Location = new System.Drawing.Point(91, 137);
             this.bClear.Name = "bClear";
             this.bClear.Size = new System.Drawing.Size(75, 23);
             this.bClear.TabIndex = 8;
@@ -135,7 +125,7 @@
             // 
             // bSave
             // 
-            this.bSave.Location = new System.Drawing.Point(1093, 626);
+            this.bSave.Location = new System.Drawing.Point(172, 137);
             this.bSave.Name = "bSave";
             this.bSave.Size = new System.Drawing.Size(75, 23);
             this.bSave.TabIndex = 9;
@@ -151,7 +141,7 @@
             // 
             this.warning.AutoSize = true;
             this.warning.ForeColor = System.Drawing.Color.Red;
-            this.warning.Location = new System.Drawing.Point(527, 652);
+            this.warning.Location = new System.Drawing.Point(7, 112);
             this.warning.Name = "warning";
             this.warning.Size = new System.Drawing.Size(401, 13);
             this.warning.TabIndex = 10;
@@ -162,7 +152,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(197, 612);
+            this.label1.Location = new System.Drawing.Point(7, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 11;
@@ -171,20 +161,32 @@
             // lRank
             // 
             this.lRank.AutoSize = true;
-            this.lRank.Location = new System.Drawing.Point(527, 612);
+            this.lRank.Location = new System.Drawing.Point(7, 72);
             this.lRank.Name = "lRank";
             this.lRank.Size = new System.Drawing.Size(70, 13);
             this.lRank.TabIndex = 12;
             this.lRank.Text = "Fractal\'s rank";
+            // 
+            // pbox
+            // 
+            this.pbox.BackColor = System.Drawing.Color.Transparent;
+            this.pbox.Location = new System.Drawing.Point(0, 0);
+            this.pbox.Margin = new System.Windows.Forms.Padding(0);
+            this.pbox.Name = "pbox";
+            this.pbox.Size = new System.Drawing.Size(50, 50);
+            this.pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbox.TabIndex = 2;
+            this.pbox.TabStop = false;
             // 
             // MainForm
             // 
             this.AcceptButton = this.bBuild;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CancelButton = this.bClear;
-            this.ClientSize = new System.Drawing.Size(1500, 681);
+            this.ClientSize = new System.Drawing.Size(1568, 781);
             this.Controls.Add(this.lRank);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.warning);
@@ -196,12 +198,12 @@
             this.Controls.Add(this.rbKoch);
             this.Controls.Add(this.bBuild);
             this.Controls.Add(this.pbox);
-            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Graphics Lab4. Fractals";
-            ((System.ComponentModel.ISupportInitialize)(this.pbox)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.rank)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +211,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbox;
         private System.Windows.Forms.Button bBuild;
         private System.Windows.Forms.RadioButton rbKoch;
         private System.Windows.Forms.RadioButton rbSerpinsli;
@@ -221,6 +222,7 @@
         private System.Windows.Forms.Label warning;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lRank;
+        private System.Windows.Forms.PictureBox pbox;
     }
 }
 
